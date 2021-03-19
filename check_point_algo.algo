@@ -1,0 +1,46 @@
+ALGORITHM algorithm_name
+VAR
+sentence : STRING;
+table: ARRAY_OF STRING;
+nbr_char : INTEGER;
+nbr_word : INTEGER;
+name : type := value;
+table_vowels :={a,e,i,o,u,y} ARRAY_OF CHAR[6];
+nbr_vowels : INTEGER;
+i,j : INTEGER
+    set_declarations
+BEGIN
+//Get sentence input from user
+    read (sentence)
+ //Put the sentence in array ("table")  
+    FOR i FROM 0 TO length(sentence)-1 STEP 1  DO
+    table[i]:=sentence[i]
+    END_FOR
+
+//Get lenghth of sentence
+        nbr_letre:=0;
+    IF (table[i] = char) THEN
+        nbr_chr:=nbre_char + 1;
+    END_IF
+       write(nbr_char)
+
+//Get number of words in sentence
+        nbr_word := 0;
+FOR i FROM 0 TO lenghth(sentence)-1 STEP 1  DO
+    IF (table([i] := ' ') THEN
+            nbr_word := nbr_word + 1;
+    END_IF
+END_FOR
+    write(nbr_word)
+
+//Get number of vowels
+        nbr_vowels:= 0;
+FOR i FROM 0 TO length(table)-1 STEP 1  DO
+    FOR j FROM 0 TO 6 STEP 1  DO
+    IF (table[i] = table_vowels[j]) THEN
+        nbr_vowels:= nbr_vowels +1
+    END_IF
+    END_FOR
+END_FOR
+    write(nbr_vowels)
+END
